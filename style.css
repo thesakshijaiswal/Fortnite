@@ -5,374 +5,254 @@
 }
 
 body {
+  font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
+  background-color: #000;
 }
 
 .main-width {
-  width: 1400 px;
-  max-width: 95%;
+  max-width: 1400px;
+  width: 95%;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .hero {
-  height: 100%;
-  width: 100%;
   min-height: 100vh;
-  background: radial-gradient(#ec89d5, 20%, #300224);
+  width: 100%;
+  background: radial-gradient(#ec89d5 20%, #300224);
   position: relative;
-}
-
-.hero header .logo h2 a {
-  display: block;
-  font-size: 32px;
-  font-weight: 600;
-  text-decoration: none;
-  color: white;
-
 }
 
 .hero header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 0 30px;
+  padding: 2rem 0;
 }
 
-nav ul li {
-  list-style: none;
-  display: inline-block;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  margin-left: 60px;
-  font-size: 15px;
-  font-weight: 600;
-  border-bottom: 2px solid transparent;
-  transition: .4s;
-}
-
-nav ul li:not(:last-child) a:hover,
-nav ul li:not(:last-child) a:focus {
-  border-bottom: 2px solid white;
-}
-
-nav ul li.active a {
-  border-bottom: 2px solid white;
-}
-
-nav ul li.btn a {
-  background: transparent;
-  color: white;
-  border: 1px solid #f5dca8;
-  padding: 9px 20px;
-  border-radius: 30px;
-  line-height: 1.4;
-  font-size: 14px;
-  font-weight: 500;
-  margin-left: 150px;
-}
-
-nav ul li.btn:hover a {
-  border: 1px solid white;
-  color: black;
-  background: white;
-  transition: .4s;
-}
-
-.content {
-  padding: 140px;
-}
-
-.content .main-text {
-  position: relative;
-  z-index: 2;
-  margin-bottom: 50px;
-}
-
-.content .main-text h6 {
-  font-size: 14px;
-  font-weight: 400;
-  color: white;
-  margin-bottom: 40px;
-}
-
-.content .main-text h1 {
-  font-size: 100px;
-  line-height: 1;
-  color: white;
-  margin: 0px 0px 45px;
-}
-
-.content .main-text h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: white;
-}
-
-.content .main-text p {
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-.main-width {
-  width: 1400 px;
-  max-width: 95%;
-  margin: 0 auto;
-}
-
-.hero {
-  height: 100%;
-  width: 100%;
-  min-height: 100vh;
-  background: radial-gradient(#ec89d5, 20%, #300224);
-  position: relative;
-}
-
-.hero header .logo h2 a {
-  display: block;
-  font-size: 32px;
+.logo h2 a {
+  font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
-  color: white;
-
+  color: #fff;
 }
 
-.hero header {
+nav ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 40px 0 30px;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 nav ul li {
   list-style: none;
-  display: inline-block;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
-  margin-left: 60px;
-  font-size: 15px;
+  font-size: 0.95rem;
   font-weight: 600;
   border-bottom: 2px solid transparent;
-  transition: .4s;
+  transition: 0.3s;
 }
 
-nav ul li:not(:last-child) a:hover,
-nav ul li:not(:last-child) a:focus {
-  border-bottom: 2px solid white;
-}
-
+nav ul li:not(.btn):hover a,
 nav ul li.active a {
   border-bottom: 2px solid white;
 }
 
 nav ul li.btn a {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #f5dca8;
+  border-radius: 30px;
   background: transparent;
   color: white;
-  border: 1px solid #f5dca8;
-  padding: 9px 20px;
-  border-radius: 30px;
-  line-height: 1.4;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 500;
-  margin-left: 150px;
 }
 
-nav ul li.btn:hover a {
-  border: 1px solid white;
-  color: black;
+nav ul li.btn a:hover {
   background: white;
-  transition: .4s;
+  color: black;
+  border-color: white;
 }
 
 .content {
-  padding: 140px;
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.content .main-text {
-  position: relative;
+.main-text {
   z-index: 2;
-  margin-bottom: 50px;
-}
-
-.content .main-text h6 {
-  font-size: 14px;
-  font-weight: 400;
   color: white;
-  margin-bottom: 40px;
+  max-width: 600px;
 }
 
-.content .main-text h1 {
-  font-size: 100px;
-  line-height: 1;
-  color: white;
-  margin: 0px 0px 45px;
+.main-text h6 {
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
 }
 
-.content .main-text h3 {
-  font-size: 18px;
+.main-text h3 {
+  font-size: 1.2rem;
   font-weight: 600;
-  color: white;
 }
 
-.content .main-text p {
-  max-width: 100%;
-  width: 480px;
-  color: white;
+.main-text h1 {
+  font-size: 4rem;
+  margin: 0.5rem 0 2rem;
+  line-height: 1.1;
+}
+
+.main-text p {
+  font-size: 1rem;
   line-height: 1.8;
-  font-size: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
 }
 
-.content .main-text a {
+.main-text a {
   display: inline-block;
   text-decoration: none;
-  color: black;
-  background: white;
-  border: 1px solid white;
-  padding: 9px 25px;
-  line-height: 1.4;
+  padding: 0.6rem 1.5rem;
   border-radius: 30px;
-  font-size: 14px;
   font-weight: 500;
-}
-
-.content .main-text a:hover {
-  transform: scale(1.2);
-  border: 1px solid #f5dca8;
-  background: transparent;
-  color: white;
-  transition: .4s;
-}
-
-.content .main-text a.cta {
-  border: 1px solid black;
-  color: white;
-  background: transparent;
-  margin-left: 20px;
-}
-
-.content .main-text a.cta i {
-  margin-right: 12px;
-}
-
-.content .main-text a.cta:hover {
-  color: black;
-  background: white;
+  font-size: 0.9rem;
   border: 1px solid white;
-  transition: .4s;
+  background: white;
+  color: black;
+  margin-right: 1rem;
+  transition: 0.3s;
 }
 
-.content .social {
-  position: relative;
-  z-index: 2;
-  margin-top: 200px;
-  padding-bottom: 40px;
-}
-
-.content .social a {
-  display: inline-block;
-  color: #f5dcac;
-  margin-right: 25px;
-  font-size: 25px;
-}
-
-.content .social a:hover {
-  transform: scale(1.2);
-  transition: .4s;
+.main-text a:hover {
+  transform: scale(1.05);
+  background: transparent;
   color: white;
+  border-color: #f5dca8;
+}
+
+.main-text a.cta {
+  background: transparent;
+  color: white;
+  border: 1px solid black;
+}
+
+.main-text a.cta:hover {
+  background: white;
+  color: black;
+  border-color: white;
+}
+
+.main-text a.cta i {
+  margin-right: 0.5rem;
+}
+
+.social {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  color: #f5dcac;
+}
+
+.social a {
+  color: #f5dcac;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: white;
+  transform: scale(1.2);
 }
 
 .image {
   position: absolute;
-  width: 95%;
-  height: 80%;
   bottom: 0;
   right: 0;
+  width: 45%;
   text-align: right;
 }
 
 .image img {
-  height: 100%;
-}￼Enter  max-width: 100%;
-  width: 480px;
-  color: white;
-  line-height: 1.8;
-  font-size: 15px;
-  margin-bottom: 50px;
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
 }
 
-.content .main-text a {
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  background: white;
-  border: 1px solid white;
-  padding: 9px 25px;
-  line-height: 1.4;
-  border-radius: 30px;
-  font-size: 14px;
-  font-weight: 500;
+@media (max-width: 1024px) {
+  .content {
+    padding: 4rem 0;
+  }
+
+  .main-text h1 {
+    font-size: 3rem;
+  }
+
+  .image {
+    width: 50%;
+  }
 }
 
-.content .main-text a:hover {
-  transform: scale(1.2);
-  border: 1px solid #f5dca8;
-  background: transparent;
-  color: white;
-sition: .4s;
+@media (max-width: 768px) {
+  .hero header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .content {
+    padding: 4rem 1rem;
+  }
+
+  .main-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .image {
+    position: static;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .image img {
+    width: 70%;
+  }
+
+  .social {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
-.content .main-text a.cta {
-  border: 1px solid black;
-  color: white;
-  background: transparent;
-  margin-left: 20px;
-}
+@media (max-width: 480px) {
+  .main-text h1 {
+    font-size: 2rem;
+  }
 
-.content .main-text a.cta i {
-  margin-right: 12px;
-}
+  nav ul li a {
+    margin-left: 0;
+  }
 
-.content .main-text a.cta:hover {
-  color: black;
-  background: white;
-  border: 1px solid white;
-  transition: .4s;
-}
+  .main-text a {
+    display: block;
+    margin-bottom: 1rem;
+  }
 
-.content .social a {
-  display: inline-block;
-  color: #f5dcac;
-  margin-right: 25px;
-  font-size: 25px;
-}
+  .main-text a.cta {
+    margin-left: 0;
+  }
 
-.content .social a:hover {
-  transform: scale(1.2);
-  transition: .4s;
-  color: white;
-}
-
-.image {
-  position: absolute;
-  width: 95%;
-  height: 80%;
-  bottom: 0;
-  right: 0;
-  text-align: right;
-}
-
-.image img {
-  height: 100%;
+  .image img {
+    width: 90%;
+  }
 }
